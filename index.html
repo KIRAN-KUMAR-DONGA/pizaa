@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>select pizza</title>
+  </head>
+  <body>
+    <!-- modal -->
+    <div class="modal" id="todo_form">
+      <div class="header"></div>
+      <div class="body">
+        <input type="text" id="todo_input" />
+        <input type="submit" value="Add Todo" id="todo_submit" />
+      </div>
+    </div>
+    <!-- todo -->
+    <div class="todo-container">
+      <div class="status" id="no_status">
+        <h1>base</h1>
+        <div class="todo" draggable="true">
+          small
+          <span class="close"></span>
+        </div>
+        <div class="todo" draggable="true">
+            medium
+            <span class="close"></span>
+          </div>
+        <div class="todo" draggable="true">
+            large
+            <span class="close"></span>
+          </div>
+      </div>
+      <div class="status">
+        <h1>ingredients</h1>
+        <div class="todo" id="mushrooms" draggable="true">
+            mushrooms
+            <span class="close"></span>
+          </div>
+          <div class="todo" id="salami" draggable="true">
+            salami
+            <span class="close"></span>
+          </div>
+          <div class="todo"  id="shrimp" draggable="true">
+            shrimp
+            <span class="close"></span>
+          </div>
+          <div class="todo" id="chilipepper" draggable="true">
+            chili pepper
+            <span class="close"></span>
+          </div>
+      </div>
+      <div class="status">
+        <h1>selected</h1>
+        <div class="status" id="result">
+            
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
